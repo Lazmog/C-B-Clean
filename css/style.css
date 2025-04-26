@@ -107,7 +107,7 @@ header nav ul li:not(:nth-child(2)) a:hover::after {
 .containerLogo img{
     width: 400px;
     filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.89));
-    animation: bounce 2s infinite;
+    animation: bounce 4s infinite;
 }
 
 .containerLogo h1{
