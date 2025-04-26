@@ -1,3 +1,27 @@
+// Initialiser EmailJS avec ta clé publique
+emailjs.init("MnbibrdnCkaXZitIQ"); // remplace par ta vraie clé EmailJS
+
+// Gérer la soumission du formulaire
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_pcq2x65", "template_i7krrtv", form)
+            .then(function () {
+                alert("E-mail envoyé avec succès !");
+                form.reset(); // Réinitialiser le formulaire
+            }, function (error) {
+                console.error("Erreur :", error);
+                alert("Une erreur s'est produite. Veuillez réessayer.");
+            });
+    });
+});
+
+
+
+
 // Récupérer l'élément
 const backToTop = document.getElementById('backToTop');
 

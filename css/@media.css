@@ -1,4 +1,10 @@
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
+    .containerSociauxLocalisation{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+}@media screen and (max-width: 1300px) {
     .containerServicesEngagement{
         display: flex;
         flex-direction: column;
@@ -247,6 +253,25 @@
         width: 95%;
         outline: none;
         resize: none;
+    }
+
+    .coordonneesReseauxSociaux h1{
+        background-color: #c9e5f6;
+        padding-block: 10px;
+        padding-inline: 20px;
+        border-radius: 15px;
+        color: #0c3c5c;
+        text-align: center;
+    }
+
+    .localosation h2, .instagram h2, .whatsapp h2{
+        color: #0c3c5c;
+        padding-block: 20px;
+        padding-inline: 20px;
+        background-color: #c9e5f6;
+        border-radius: 15px;
+        width: 300px;
+        text-align: center;
     }
 
 }

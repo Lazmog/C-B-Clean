@@ -16,10 +16,15 @@
     font-family: Alef;
 }
 
-body{
+body, html{
     width: 100%;
     height: 100%;
     background-color: #2f6383;
+}
+
+header{
+    display: flex;
+    justify-content: center;
 }
 
 header nav{
@@ -32,6 +37,8 @@ header nav{
     box-shadow: 15px 19px 17px -1px rgba(12, 60, 92, 0.76);
     -webkit-box-shadow: 15px 19px 17px -1px rgba(12, 60, 92, 0.76);
     -moz-box-shadow: 15px 19px 17px -1px rgba(12, 60, 92, 0.76);
+    position: fixed;
+    z-index: 1000;
 }
 
 header nav ul{
@@ -77,6 +84,7 @@ header nav ul li:not(:nth-child(2)) a:hover::after {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10rem;
     gap: 2rem;
 }
 
@@ -338,4 +346,63 @@ article{
     bottom: unset;
     /* transform: translateY(-30px); */
     transition-duration: 0.3s;
+}
+
+.coordonneesReseauxSociaux{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.coordonneesReseauxSociaux h1{
+    background-color: #c9e5f6;
+    padding-block: 10px;
+    padding-inline: 60px;
+    border-radius: 15px;
+    color: #0c3c5c;
+}
+
+.containerSociauxLocalisation{
+    display: flex;
+    gap: 5rem;
+}
+
+.localosation, .instagram, .whatsapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.localosation h2, .instagram h2, .whatsapp h2{
+    color: #0c3c5c;
+    padding-block: 20px;
+    padding-inline: 100px;
+    background-color: #c9e5f6;
+    border-radius: 15px;
+    width: 400px;
+    text-align: center;
+}
+
+.localosation div, .instagram div, .whatsapp div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M906 695.5Q812 891 600.5 939t-381-87Q50 717 50 500t169.5-352Q389 13 600.5 61T906 304.5q94 195.5 0 391Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%23C9E5F6%22 d=%22M906 695.5Q812 891 600.5 939t-381-87Q50 717 50 500t169.5-352Q389 13 600.5 61T906 304.5q94 195.5 0 391Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.89));
+}
+
+.localosation div img, .instagram div img{
+    width: 200px;
+}
+
+.whatsapp div img{
+    width: 140px;
 }
