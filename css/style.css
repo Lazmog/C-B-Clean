@@ -29,7 +29,7 @@ header{
 
 header nav{
     margin: 1rem auto;
-    background-color: #c9e5f6;
+    background-color: #0c3c5c;
     width: 50%;
     padding-block: 20px;
     padding-inline: 100px;
@@ -49,7 +49,7 @@ header nav ul{
 }
 
 header nav ul li a{
-    color: #0c3c5c;
+    color: #ffffff;
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
@@ -66,13 +66,13 @@ header nav ul li a::after {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #0c3c5c;
+    background-color: #ffffff;
     transition: width 0.3s ease;
 }
 
 /* Hover seulement pour les liens texte (pas l'image) */
 header nav ul li:not(:nth-child(2)) a:hover {
-    color: #08324c;
+    color: #ffffff;
 }
 
 header nav ul li:not(:nth-child(2)) a:hover::after {
@@ -111,7 +111,7 @@ header nav ul li:not(:nth-child(2)) a:hover::after {
 }
 
 .containerLogo h1{
-    color: #5588a4;
+    color: #0c3c5c;
     letter-spacing: 5px;
     filter: drop-shadow(0px 4px 8px rgb(4, 34, 51));
 }
@@ -122,7 +122,7 @@ header nav ul li:not(:nth-child(2)) a:hover::after {
     align-items: center;
     width: 80%;
     gap: 10px;
-    color: #0c3c5c;
+    color: #ffffff;
 }
 
 .InfoEntreprise h2{
@@ -146,7 +146,7 @@ header nav ul li:not(:nth-child(2)) a:hover::after {
     align-items: center;
     gap: 1rem;
     width: 50%;
-    color: #0c3c5c;
+    color: #ffffff;
 }
 
 .InfosSurBord h2{
@@ -160,7 +160,7 @@ header nav ul li:not(:nth-child(2)) a:hover::after {
 }
 
 article{
-    background-color: #c9e5f6;
+    background-color: #0c3c5c;
     padding-block: 20px;
     border-radius: 37px;
     box-shadow: 15px 19px 17px -1px rgba(12, 60, 92, 0.76);
@@ -177,11 +177,11 @@ article{
 }
 
 #contact h1{
-    background-color: #c9e5f6;
+    background-color: #0c3c5c;
     padding-block: 10px;
     padding-inline: 60px;
     border-radius: 15px;
-    color: #0c3c5c;
+    color: #ffffff;
 }
 
 
@@ -191,7 +191,7 @@ article{
     gap: 1rem;
     width: 50%;
     padding: 1rem;
-    background-color: #c9e5f6;
+    background-color: #0c3c5c;
     border-radius: 10px;
 }
 
@@ -210,14 +210,14 @@ article{
 .formContact input{
     height: 40px;
     background: transparent;
-    border: 2px solid #0c3c5c;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     text-indent: 10px;
     outline: none;
 }
 
 .formContact input::placeholder, .formContact input:read-write, .formContact textarea::placeholder, .formContact textarea:read-write{
-    color: #0c3c5c;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -228,7 +228,7 @@ article{
 .formContact textarea{
     height: 150px;
     background: transparent;
-    border: 2px solid #0c3c5c;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     padding: 10px;
     outline: none;
@@ -239,31 +239,31 @@ article{
     padding: 10px;
     width: 50%;
     border-radius: 5px;
-    background: #c8e3f4;
+    background: #0c3c5c;
     outline: none;
-    color: #0c3c5c;
+    color: #ffffff;
     cursor: pointer;
-    border: 2px solid #0c3c5c;
+    border: 2px solid #ffffff;
 }
 
 .formContact button:hover{
-    background: #0c3c5c;
-    color: white;
-    border: 2px solid white;
+    background: #ffffff;
+    color: #0c3c5c;
+    border: 2px solid #0c3c5c;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .infoContact{
-    color: #0c3c5c;
+    color: #ffffff;
     filter: drop-shadow(0px 1px 3px rgba(104, 104, 104, 0.7));
     font-weight: 200;
 
 }
 
 .infoEmail{
-    color: #0c3c5c;
+    color: #ffffff;
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -358,11 +358,11 @@ article{
 }
 
 .coordonneesReseauxSociaux h1{
-    background-color: #c9e5f6;
+    background-color: #0c3c5c;
     padding-block: 10px;
     padding-inline: 60px;
     border-radius: 15px;
-    color: #0c3c5c;
+    color: #ffffff;
 }
 
 .containerSociauxLocalisation{
@@ -377,10 +377,10 @@ article{
 }
 
 .localosation h2, .instagram h2, .whatsapp h2{
-    color: #0c3c5c;
+    color: #ffffff;
     padding-block: 20px;
     padding-inline: 100px;
-    background-color: #c9e5f6;
+    background-color: #0c3c5c;
     border-radius: 15px;
     width: 400px;
     text-align: center;
@@ -395,8 +395,6 @@ article{
     background-size: cover;
     background-position: center center;
     background-repeat: repeat;
-    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M906 695.5Q812 891 600.5 939t-381-87Q50 717 50 500t169.5-352Q389 13 600.5 61T906 304.5q94 195.5 0 391Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%23C9E5F6%22 d=%22M906 695.5Q812 891 600.5 939t-381-87Q50 717 50 500t169.5-352Q389 13 600.5 61T906 304.5q94 195.5 0 391Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.89));
 }
 
 .localosation div img, .instagram div img{
