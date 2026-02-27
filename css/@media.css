@@ -1,0 +1,179 @@
+/* Base Responsiveness - C&B-Clean */
+
+/* Tablet Optimization */
+@media screen and (max-width: 1024px) {
+    header nav {
+        min-width: 90%;
+        padding: 10px 20px;
+    }
+
+    header nav ul {
+        gap: 1.5rem;
+    }
+
+    .containerLogo h1 {
+        font-size: 2.8rem;
+        letter-spacing: 5px;
+    }
+
+    .containerLogo img {
+        width: 300px;
+    }
+
+    .containerServicesEngagement {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .containerContact {
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .formContact,
+    .infoContact {
+        width: 100%;
+    }
+
+    .containerSociauxLocalisation {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* Mobile Optimization */
+@media screen and (max-width: 768px) {
+    header nav {
+        top: 20px;
+        bottom: auto;
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50px;
+        backdrop-filter: blur(20px);
+        background: rgba(12, 60, 92, 0.9);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+        z-index: 2000;
+    }
+
+    #accueil {
+        padding-top: 10rem;
+    }
+
+    .containerLogo h1 {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .containerLogo img {
+        width: 220px;
+        height: auto;
+    }
+
+    .InfoEntreprise {
+        padding: 2rem 1.5rem;
+        width: 100%;
+    }
+
+    .InfoEntreprise p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .containerServicesEngagement {
+        width: 95%;
+        padding: 0;
+    }
+
+    .InfosSurBord {
+        padding: 2.5rem 1.5rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .containerContact {
+        padding: 2.5rem 1.5rem;
+        width: 95%;
+        box-sizing: border-box;
+    }
+
+    .formContact input,
+    .formContact textarea {
+        font-size: 16px;
+        /* Prevents iOS zoom */
+    }
+
+    .localosation,
+    .instagram {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .localosation div,
+    .instagram div {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Mobile Menu Styles */
+    .mobile-menu-btn {
+        display: flex;
+        z-index: 2001;
+    }
+
+    header nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-dark);
+        backdrop-filter: blur(25px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        z-index: 1500;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+    header nav ul li a {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    header nav ul li:nth-child(2) {
+        order: -1;
+    }
+
+    header nav ul li a img {
+        width: 150px;
+    }
+
+    .mobile-menu-btn.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .mobile-menu-btn.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-btn.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+}

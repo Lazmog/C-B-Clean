@@ -34,7 +34,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }, observerOptions);
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navUl = document.querySelector('header nav ul');
+
+    if (mobileMenuBtn && navUl) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navUl.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('open');
+        });
+    }
 });
+
 
 
 

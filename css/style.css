@@ -149,6 +149,22 @@ header nav ul li:not(:nth-child(2)) a:hover::after {
     width: 80%;
 }
 
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.mobile-menu-btn span {
+    width: 25px;
+    height: 2px;
+    background: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+
 
 #accueil {
     display: flex;
